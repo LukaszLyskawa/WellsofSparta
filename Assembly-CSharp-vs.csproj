@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{1F780706-F1AB-6DDF-93FE-32CD6AF8966F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Programy/Unity/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Programy/Unity/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Breakable Glass\Scripts\BreakGlass.cs" />
+     <Compile Include="Assets\Breakable Glass\Scripts\GlassBreaker.cs" />
+     <Compile Include="Assets\FXAA\Scripts\FXAA.cs" />
+     <Compile Include="Assets\FXAA\Scripts\FXAAPostEffectsBase.cs" />
+     <Compile Include="Assets\HUD\score.cs" />
+     <Compile Include="Assets\Misc\alarmlightrotation.cs" />
+     <Compile Include="Assets\Scripts\Bullet\MouseControll.cs" />
+     <Compile Include="Assets\Scripts\Bullet\Move.cs" />
+     <Compile Include="Assets\Scripts\Bullet\MoveCam.cs" />
+     <Compile Include="Assets\Scripts\Bullet\bulletCollisions.cs" />
+     <Compile Include="Assets\Scripts\Bullet\bulletRotator.cs" />
+     <Compile Include="Assets\Scripts\Bullet\lightIntensityAnimate.cs" />
+     <Compile Include="Assets\Scripts\FPS\limitFPS.cs" />
+     <Compile Include="Assets\Scripts\FPS\showFPS.cs" />
+     <Compile Include="Assets\Scripts\HUD\CathmenuControll.cs" />
+     <Compile Include="Assets\Scripts\HUD\activateChildren.cs" />
+     <Compile Include="Assets\Scripts\HUD\alphaFadeIn.cs" />
+     <Compile Include="Assets\Scripts\HUD\fadePause.cs" />
+     <Compile Include="Assets\Scripts\HUD\fader.cs" />
+     <Compile Include="Assets\Scripts\HUD\faderIn.cs" />
+     <Compile Include="Assets\Scripts\HUD\faderInPartial.cs" />
+     <Compile Include="Assets\Scripts\HUD\faderOut.cs" />
+     <Compile Include="Assets\Scripts\HUD\lastButtonControll.cs" />
+     <Compile Include="Assets\Scripts\HUD\menuButton.cs" />
+     <Compile Include="Assets\Scripts\HUD\menuController.cs" />
+     <Compile Include="Assets\Scripts\HUD\menuEnter.cs" />
+     <Compile Include="Assets\Scripts\HUD\pauseAlphaControll.cs" />
+     <Compile Include="Assets\Scripts\HUD\pauseButtonControll.cs" />
+     <Compile Include="Assets\Scripts\Level\TunnelGeneration.cs" />
+     <Compile Include="Assets\Scripts\Level\addObstacles.cs" />
+     <Compile Include="Assets\Scripts\Level\collidePowerUp.cs" />
+     <Compile Include="Assets\Scripts\Level\collidestypendium.cs" />
+     <Compile Include="Assets\Scripts\Level\pipeController.cs" />
+     <Compile Include="Assets\Scripts\Level\powerUpDeleter.cs" />
+     <Compile Include="Assets\Scripts\Level\selfDestructionTimer.cs" />
+     <Compile Include="Assets\Scripts\Level\soundPitcher.cs" />
+     <Compile Include="Assets\Scripts\Misc\sinusMoves.cs" />
+     <Compile Include="Assets\Scripts\globals.cs" />
+     <Compile Include="Assets\clusterScript.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\AutoCam.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\FreeLookCam.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\HandHeldCam.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\LookatTarget.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\TargetFieldOfView.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cameras\Scripts\startGunController.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\AbstractButton.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\Button.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\ButtonDownTextureChange.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\ButtonFactory.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\CrossPlatformInput.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\Joystick.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\JoystickAbstract.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\TouchJoystick.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\TouchPadPositional.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
+     <Compile Include="Assets\o\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
+     <None Include="Assets\Breakable Glass\Shaders\SimpleGlass.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\FXAA\Shaders\Fxaa3.shader" />
+     <None Include="Assets\Breakable Glass\README.txt" />
+     <None Include="Assets\o\Sample Assets\Cross Platform Input\Cross Platform Input Guidelines.txt" />
+     <None Include="Assets\FXAA\Shaders\Fxaa3_9.cginc" />
+     <None Include="Assets\o\Sample Assets\Cameras\Camera Guidelines.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Filip/Dropbox/Corridors of Liberty/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
